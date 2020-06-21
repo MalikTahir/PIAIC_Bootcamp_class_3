@@ -4,7 +4,7 @@ function Ctm(props)
 {
     return(
         <div align="center">    
-            <h1 >Today  we all had a great learning experience with {props.Instructor}</h1>
+            <h1 >Today  we had a great learning experience with {props.Instructor}</h1>
             <hr />
             <hr />
             <h1>Alongwith {props.Instructor} were </h1>

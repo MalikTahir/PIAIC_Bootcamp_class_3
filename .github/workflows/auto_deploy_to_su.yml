@@ -7,8 +7,7 @@ name: PIAIC Bootcamp Class_3 workflow
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
+ 
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -37,12 +36,12 @@ jobs:
       with:
         node-version: 12
     - name: Action for Yarn
-    - uses: Borales/actions-yarn@v2.3.0
+      uses: Borales/actions-yarn@v2.3.0
       with:
     # Yarn command
-        cmd: intall
+        cmd: install
     - name: installing surge
       run: npm install -g surge
      
     - name: deploying on surge
-      run: surge ./build http://boot_camp_class_3.surge.sh/ --token ${{surgeToken}}
+      run: surge  http://boot_camp_class_3.surge.sh/ --token ${{secrets.SURGETOKEN}}

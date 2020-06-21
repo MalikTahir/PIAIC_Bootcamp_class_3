@@ -7,8 +7,7 @@ name: PIAIC Bootcamp Class_3 workflow
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
+ 
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:

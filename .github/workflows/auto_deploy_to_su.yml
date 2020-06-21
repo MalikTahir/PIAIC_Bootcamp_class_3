@@ -44,5 +44,5 @@ jobs:
       run: npm install -g surge
      
     - name: deploying on surge
-      run: surge D:\PIAIC Bootcamp 2020\Bootcamp2020Sample\Class_3\demo_3\build http://boot_camp_class_3.surge.sh/ --token ${{secrets.SURGETOKEN}}
+      run: surge .\build http://boot_camp_class_3.surge.sh/ --token ${{secrets.SURGETOKEN}}
       
